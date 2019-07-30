@@ -1,0 +1,14 @@
+{
+    "name": "shurupovk/brain-games",
+    "description": "A project with few small games",
+    "authors": [
+        {
+            "name": "Kirill Shurupov",
+            "email": "shurupovk@yandex.ru"
+        }
+    ],
+    "bin" : [
+    	"./brain-games"
+    ],
+    "require": {}
+}
