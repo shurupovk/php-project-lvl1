@@ -1,19 +1,27 @@
-{
-    "name": "shurupovk/brain-games",
-    "bin": [
-        "bin/brain-games"
-      ],
-    "description": "few little games",
-    "authors": [
-        {
-            "name": "Kirill Shurupov",
-            "email": "shurupovk@yandex.ru"
-        }
-    ],
-    "require": {
-        "wp-cli/php-cli-tools": "^0.11.11"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^3.4"
-    }
+{  
+   "name":"shurupovk/brain-games",
+   "bin":[  
+      "bin/brain-games"
+   ],
+   "description":"few little games",
+   "authors":[  
+      {  
+         "name":"Kirill Shurupov",
+         "email":"shurupovk@yandex.ru"
+      }
+   ],
+   "autoload":{  
+      "files":[  
+         "src/Cli.php"
+      ]
+   },
+   "require":{  
+      "wp-cli/php-cli-tools":"^0.11.11"
+   },
+   "require-dev":{  
+      "squizlabs/php_codesniffer":"^3.4"
+   },
+   "scripts":{  
+      "phpcs":"phpcs"
+   }
 }
