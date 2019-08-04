@@ -1,6 +1,7 @@
 {  
    "name":"shurupovk/brain-games",
-   "bin":[  
+   "bin":[
+      "bin/brain-even",  
       "bin/brain-games"
    ],
    "description":"few little games",
@@ -12,6 +13,7 @@
    ],
    "autoload":{  
       "files":[  
+         "src/brain-even.php",
          "src/Cli.php"
       ]
    },
