@@ -16,7 +16,8 @@
       "files":[  
          "src/brain-even.php",
          "src/Cli.php",
-         "src/brain-calc.php"
+         "src/brain-calc.php",
+         "src/Engine.php"
       ]
    },
    "require":{  
