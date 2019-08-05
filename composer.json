@@ -2,7 +2,8 @@
    "name":"shurupovk/brain-games",
    "bin":[
       "bin/brain-even",  
-      "bin/brain-games"
+      "bin/brain-games",
+      "bin/brain-calc"
    ],
    "description":"few little games",
    "authors":[  
@@ -14,7 +15,8 @@
    "autoload":{  
       "files":[  
          "src/brain-even.php",
-         "src/Cli.php"
+         "src/Cli.php",
+         "src/brain-calc.php"
       ]
    },
    "require":{  
