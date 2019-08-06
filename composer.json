@@ -3,7 +3,8 @@
    "bin":[
       "bin/brain-even",  
       "bin/brain-games",
-      "bin/brain-calc"
+      "bin/brain-calc",
+      "bin/brain-gcd"
    ],
    "description":"few little games",
    "authors":[  
@@ -14,10 +15,11 @@
    ],
    "autoload":{  
       "files":[  
-         "src/brain-even.php",
+         "src/even.php",
          "src/Cli.php",
-         "src/brain-calc.php",
-         "src/Engine.php"
+         "src/calc.php",
+         "src/Engine.php",
+         "src/gcd.php"
       ]
    },
    "require":{  

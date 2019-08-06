@@ -12,7 +12,7 @@ function startGame($data, $description)
     $correctAnswers = 0;
     for ($i = 0; $i < $numberOfGames; $i++) {
         $getData = $data();
-        ['question' => $question, 'answer' => $answer] = $getData;
+        [$question, $answer] = $getData;
         line("Question: $question");
         $userAnswer = prompt("Your answer");
         if ($userAnswer == $answer) {
