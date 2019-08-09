@@ -7,7 +7,7 @@ use function cli\prompt;
 
 function startGame($data, $description)
 {
-    line($description);
+    line("$description\n");
     $numberOfGames = (int)prompt('Type a number of rounds');
     $correctAnswers = 0;
     for ($i = 0; $i < $numberOfGames; $i++) {
