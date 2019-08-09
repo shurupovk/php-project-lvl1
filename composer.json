@@ -5,7 +5,8 @@
       "bin/brain-games",
       "bin/brain-calc",
       "bin/brain-gcd",
-      "bin/brain-progression"
+      "bin/brain-progression",
+      "bin/brain-prime"
    ],
    "description":"few little games",
    "authors":[  
@@ -21,7 +22,8 @@
          "src/calc.php",
          "src/Engine.php",
          "src/gcd.php",
-         "src/progression.php"
+         "src/progression.php",
+         "src/prime.php"
       ]
    },
    "require":{  
