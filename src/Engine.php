@@ -11,8 +11,7 @@ function startGame($data, $description)
     $numberOfGames = (int)prompt('Type a number of rounds');
     $correctAnswers = 0;
     for ($i = 0; $i < $numberOfGames; $i++) {
-        $getData = $data();
-        [$question, $answer] = $getData;
+        [$question, $answer] = $data();
         line("Question: $question");
         $userAnswer = prompt("Your answer");
         if ($userAnswer == $answer) {

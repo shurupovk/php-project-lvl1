@@ -10,18 +10,16 @@ const SIZE_OF_PROGRESSION = 10;
 function game()
 {
     $data = function () {
-        $beginOfProgression = rand(1, 5);
-        $stepOfProgression = rand(1, 5);
-        $hiddenElementIndex = rand(0, 9);
+        $begin = rand(1, 5);
+        $step = rand(1, 5);
+        $indexOfHiddenElement = rand(0, SIZE_OF_PROGRESSION - 1);
         $progression = [];
-        $currentElement = $beginOfProgression;
-        for ($i = 0; $i < SIZE_OF_PROGRESSION; $i++)
+        for ($i = 1; $i < SIZE_OF_PROGRESSION; $i++)
         {
-            $progression[] = $currentElement;
-            $currentElement += $stepOfProgression;
+            $progression[] = $begin + $step * ($i - 1);
         }
-        $answer = $progression[$hiddenElementIndex];
-        $progression[$hiddenElementIndex] = '..';
+        $answer = $progression[$indexOfHiddenElement];
+        $progression[$indexOfHiddenElement] = '..';
         $question = implode(' ', $progression);
         return [$question, $answer];
     };
