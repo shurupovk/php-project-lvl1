@@ -18,7 +18,7 @@
    "autoload":{  
       "files":[  
          "src/even.php",
-         "src/Cli.php",
+         "src/Menu.php",
          "src/calc.php",
          "src/Engine.php",
          "src/gcd.php",
