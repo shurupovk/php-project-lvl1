@@ -9,7 +9,7 @@ const OPERATORS = ['+', '-', '*'];
 
 function game()
 {
-    $data = function () {
+    $getData = function () {
         $firstNumber = rand(1, 10);
         $secondNumber = rand(1, 10);
         $operator = OPERATORS[array_rand(OPERATORS)];
@@ -27,5 +27,5 @@ function game()
         }
         return [$question, $answer];
     };
-    startGame($data, DESCRIPTION);
+    startGame($getData, DESCRIPTION);
 }

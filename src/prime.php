@@ -18,10 +18,10 @@ function isPrime($number)
 
 function game()
 {
-    $data = function () {
+    $getData = function () {
         $question = rand(1, 100);
         $answer = isPrime($question) ? 'yes' : 'no';
         return [$question, $answer];
     };
-    startGame($data, DESCRIPTION);
+    startGame($getData, DESCRIPTION);
 }
